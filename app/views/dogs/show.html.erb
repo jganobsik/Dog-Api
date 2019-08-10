@@ -1,0 +1,11 @@
+<h1> <%= @breed_param %> </h1>
+
+
+<% if @breed.empty? %>
+    <p> no sub-breeds </p>
+<% else %>
+    <% @breed.each do |b| %>
+    <%= b %>
+    <br/>
+    <% end %>
+<% end %>
